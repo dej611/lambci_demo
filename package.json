@@ -1,0 +1,38 @@
+{
+  "name": "lambcidemo",
+  "version": "0.0.1",
+  "description": "LambCI example for the RomaJS talk",
+  "main": "index.js",
+  "scripts": {
+    "test": "eslint . && mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dej611/lambci_demo.git"
+  },
+  "keywords": [
+    "lambci",
+    "lambda",
+    "continuous",
+    "integration"
+  ],
+  "author": "Marco Liberati <dej611@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "eslint": "^3.15.0",
+    "eslint-config-prettier": "^1.1.1",
+    "eslint-plugin-prettier": "^2.0.0",
+    "mocha": "^3.2.0",
+    "prettier": "^0.17.0"
+  },
+  "eslintConfig": {
+      "env": {
+          "es6": true,
+          "node": true
+      },
+      "extends": ["prettier"]
+  },
+  "lambci":{
+    "cmd": "npm install && npm test"
+  }
+}
